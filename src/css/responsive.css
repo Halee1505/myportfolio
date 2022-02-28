@@ -1,0 +1,160 @@
+@media (max-width: 600px){
+    .top{
+        justify-content: center;
+    }
+    .logo{
+        margin-left: 0px;
+    }
+    .background {
+        height: 200px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .menu__avt{
+        height: 100px;
+        width: 100px;
+
+    }
+    .carousel-indicators{
+        display: none;
+    }
+    .info{
+        width: 100%;
+        height: 200px;
+        top:90px;
+        left: 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .albums-description{
+        padding: 10px 10px;
+    }
+    .btn.white h4{
+        font-size: .8em;
+    }
+    a.btn.white{
+        padding: 2px 2px;
+    }
+    .navbar-border{
+        width: 100%;
+    }
+    a.btn.white:hover .nav-btn{
+            transform: scaleY(0.8) !important;
+    }
+    .des{
+        margin: 0px 0px;
+        font-size: 16px;
+    }
+    .des h4{
+        font-size: 18px;
+    }
+    .album{
+        width: 50%;
+        height: 150px;
+    }
+    .album-name{
+        font-size: 10px;
+    }
+    .image-border img{
+        max-height: 90%;
+        max-width: 98%;
+        animation: show 0.3s;
+    }
+    .collection-name {
+        font-size: 40px !important;
+    }
+    .collection-description.collection-thumbnail-blur{
+        padding: 10px 10px;
+    }
+    .gallery-name{
+        top:-120% !important;
+        height: 160px ;
+    }
+    .image-border{
+        animation: show 0.3s;
+        padding: 5px 5px !important;
+    }
+    .exit{
+        top: 20px;
+    }
+    
+}
+@media (min-width: 600px) and (max-width: 1023px){
+    .navbar-border{
+        width: 70%;
+    }
+    .album{
+        width: 33.3333%;
+        height: 253.38px;
+    }
+    .album-name{
+        font-size: 22px;
+    }
+    .image-border img{
+        max-height: 800px;
+        animation: show 0.3s;
+    }
+    .gallery-name{
+        height: 250px;
+    }
+    .collection-name{
+        margin-bottom: -30px;
+    }
+    .btn.white h4{
+        font-size: 1.5em;
+    }
+    a.btn.white{
+        padding: 2px 2px;
+    }
+    .navbar-border{
+        width: 80%;
+    }
+    .image-border{
+        animation: show 0.3s;
+    }
+    .exit{
+        top: 50px;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1085px){
+    .navbar-border{
+        width: 70%;
+    }
+    .album{
+        width: 33.3333%;
+        height: 253.38px;
+    }
+    .image-border img{
+        max-height: 90%;
+        max-width: 98%;
+        animation: show 0.3s;
+    }
+    .gallery-name{
+        height: 250px;
+    }
+    .collection-name{
+        margin-bottom: -30px;
+    }
+    .image-border{
+        animation: show 0.3s;
+    }
+    .exit{
+        top: 50px;
+    }
+}
+@media (min-width: 1085px){
+    .image-border img{
+        max-height: 600px;
+    }
+    .collection-name{
+        margin-bottom: -30px;
+    }
+    .gallery-name{
+        height: 350px;
+    }
+    .exit{
+        top: 50px;
+    }
+}

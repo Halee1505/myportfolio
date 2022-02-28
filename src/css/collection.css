@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+}
+
+/* Tạo bốn cột bằng nhau nằm cạnh nhau */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Bố cục linh hoạt: tạo bố cục 2 cột */
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Bố cục linh hoạt: làm cho hai cột xếp chồng lên nhau thay vì cạnh nhau */
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+.image{
+    border-radius: 15px;
+}
+.gallery-name{
+    position: relative;
+    top: -100%;
+    display: flex;
+    width: 100% !important;
+    justify-content:  center;
+    align-items: flex-end;
+
+}
+
+.collection-thumbnail-blur {
+    background-size: 100%;
+    background-position: center;
+    width: 90%;
+    height: 100%;
+    background-size:cover;
+}
+.collection-thumbnail {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat;
+    height: 95%;
+    background-size:contain;
+    border-radius: 18px;
+}
+.collection-name {
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-align: center;
+    text-shadow: 0 2px 2px #000;
+    display: flex;
+    align-items: center;
+}
+.collection-description {
+    width: 84%;
+    margin-top: 20px;
+    padding: 50px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: start;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.albums-description{
+    margin-top: 20px;
+}
+.image-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.image-border{
+    height: fit-content;
+    width: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px ;
+
+}
+@keyframes show {
+  from{
+    width: 0;
+    height: 0;
+    opacity:0;
+  }
+  to{
+    height: fit-content;
+    width: fit-content;
+    opacity: 1;
+  }
+}
+.image-border img{
+    border-radius: 10px;
+
+}
+.bi.bi-x-lg{
+    color: white;
+    height: 30px;
+    width: 30px;
+}
+.exit{
+    position: absolute;
+    right: 20px;
+
+    z-index: 1;
+}

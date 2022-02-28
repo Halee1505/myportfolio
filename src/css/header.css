@@ -1,0 +1,247 @@
+body {
+ 
+    
+    font-family: "comfortaa";
+    overflow-x: hidden;
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+}
+
+.top {
+    width: 100%;
+    height: 70px;
+    background-color: #000;
+    position: fixed;
+    z-index: 3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.logo{
+    height: 50px;
+    z-index: 4;
+    margin-left: 40px;
+}
+h4{
+    margin-bottom: 0px;
+}
+.portfolio {
+    color: aliceblue;
+    font-size: 45px;
+    font-weight: 800;
+    text-align: start;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+
+}
+
+.background {
+    margin-top: 70px;
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background1 {
+    background-image: url(https://res.cloudinary.com/vitamim/image/upload/v1641965386/source/background-4_ppgb59.jpg);
+}
+
+.background2 {
+
+    background-image: url(https://res.cloudinary.com/vitamim/image/upload/v1641965386/source/background-2_g2e0sn.jpg);
+}
+
+.background3 {
+    background-image: url(https://res.cloudinary.com/vitamim/image/upload/v1641965386/source/background-7_vp95qr.jpg);
+
+}
+
+.background4 {
+    background-image: url(https://res.cloudinary.com/vitamim/image/upload/v1641965386/source/background-8_tcbstg.jpg);
+
+}
+
+.background5 {
+    background-image: url(https://res.cloudinary.com/vitamim/image/upload/v1641965386/source/background-6_uachgk.jpg);
+
+}
+
+.background6 {
+    background-image: url(https://res.cloudinary.com/vitamim/image/upload/v1641965389/source/background-9_luwhh1.jpg);
+
+}
+
+.navbar-border {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-fluid {
+    justify-content: center !important;
+}
+
+ul {
+    width: 100%;
+    margin-bottom: 0px !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    top: 400px;
+    left: 60px;
+    /* animation: showName 1s; */
+}
+@keyframes showName {
+    from{
+        left: -300px;
+    }
+    to{
+        left: 60px;
+    }
+    
+}
+
+.menu__avt {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: white solid 2px;
+    object-fit: cover;
+    object-position: 50% 20%;
+
+}
+
+.name {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    text-align: center;
+    text-shadow: 0 2px 2px #000;
+    margin-bottom: 0px !important;
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    background-color: #f3f5f6;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.intro__description {
+    width: 84%;
+    margin-top: 50px;
+    padding: 50px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: start;
+    font-size: 18px;
+}
+
+.des {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.album-collection {
+    display: flex;
+    flex-wrap: wrap;
+    color: aliceblue;
+    text-shadow: 0 1px 1px #000;
+}
+
+.albums-description {
+    width: 84%;
+    margin-top: 50px;
+    padding: 50px 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    line-height: 20px;
+    text-align: start;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.album {
+    text-decoration: none;
+    width: 25%;
+    height: 309.79px;
+    box-shadow: 4px 4px 5px 0px rgb(119, 119, 119);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.album-thumbnail {
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 5% 5%;
+    width: 90%;
+    height: 90%;
+    background-size: cover;
+}
+
+.album-overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@keyframes Hover {
+    from{
+        margin-bottom: 18.72px;
+    }
+    to{
+        margin-bottom: 40px;
+    }
+}
+.album-name {
+    margin-left: 10px;
+    color: #ffffff;
+    width: fit-content;
+    margin-bottom: 18.72px;
+    transition: linear 0.2s;
+}
+.album-overlay:hover .album-name{
+    animation-name: Hover;
+    animation-duration: 0.3s;  
+    margin-bottom: 40px;
+  
+}
+.album-overlay:hover{
+    animation-name: Hover1;
+    animation-duration: 0.3s;  
+    background-color: rgba(255,255,255,0.5);
+
+}
+@keyframes Hover1 {
+    from{
+        background-color: unset;
+    }
+    to{
+        background-color: rgba(255,255,255,0.5);
+    }
+}
